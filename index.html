@@ -11,11 +11,13 @@
     <img src="https://i.imgur.com/AgUhsup.jpg" alt="" id="map">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
     <script>
-        const viewer = new Viewer(document.getElementById('map'), {
-            navbar: false,
-            title: false,
-        });
-        viewer.show();
+        document.addEventListener("DOMContentLoaded", () => {
+            const viewer = new Viewer(document.getElementById('map'), {
+                navbar: false,
+                title: false,
+            })
+            viewer.show()
+        })
     </script>
 </body>
 </html>
